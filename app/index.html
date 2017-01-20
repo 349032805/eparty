@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>易趴科技</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="微信点菜、收银、手机点餐、优惠、菜单、美食、菜谱、美味、小票、易趴、易趴科技"/>
+    <meta name="description" content="易趴科技"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+   
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body ng-app="eparty">
+    <div ui-view=""></div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script src="plugins/jquery2.14.min.js"></script>
+    <script src="plugins/jquery.SuperSlide.2.1.1.js"></script>
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/index.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild -->
+   </body>
+</html>

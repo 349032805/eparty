@@ -1,0 +1,153 @@
+<style type="text/css">
+
+	.slideBox{ 
+	  width:100%;
+	  height:700px;
+	  position: relative;
+	  background: #11BBB4;
+	}
+	.slideBox .hd{
+		width:100%;
+		position:absolute;
+		bottom: 20px;
+		z-index: 200; 
+	}
+	.slideBox .hd ul{ 
+		text-align: center;
+	}
+	.slideBox .hd ul li{ 
+		display: inline-block;
+		width:16px;
+		height:16px;
+		border-radius: 50%;
+		background: #E0E0E0;
+		margin: 0 10px;
+	}
+	.slideBox .hd ul li.on{ 
+		background: #AFAFAF; 
+	}
+	.slideBox .bd li{ 
+	    height:700px;
+	 }
+
+	.banner{
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: cover;
+	  z-index: 100;
+	 }
+
+	.theme-block{
+ 	  margin:0 auto;
+      width:1200px;
+      height:700px;
+      text-align: center;
+	 }
+
+	 .theme-title{
+	 	padding: 80px 0;
+	 	color:#666;
+	 	font-size: 40px;
+	 }
+
+	 .system-img{
+	 	width:1156px;
+	 	height:374px;
+	 }
+
+	 .labels{
+	 	width:900px;
+	 	margin:0 auto;
+	 }
+
+	 .label{
+	 	display: flex;
+	 	margin-bottom: 30px;
+	 }
+
+	 .label li{
+	 	float:left;
+	 	flex: 1;
+	 }
+	 .label img{
+	 	width:126px;
+	 	height:126px;
+	 }
+
+	 .label p{
+	 	font-size: 18px;
+	 	color:#666;
+	 	line-height: 60px;
+	 }
+
+	 .footer-line{
+	 	border-bottom: 1px solid #C0C2C6;
+	 }
+
+</style>
+
+<!-- 滚动banner -->
+<div class="slideBox">
+    <div class="hd">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+    </div>
+    <div class="bd">
+        <ul>
+        	<li style="background-image: url('/images/banner_index.png')" class="banner"></li>
+          	<li style="background-image: url('/images/banner2.jpg')" class="banner"></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 生态系统图 -->
+<div class="theme-block">
+	<div class="theme-title">易趴云餐厅生态系统</div>
+	 <img src="/images/system.png" class="system-img">
+</div>
+<div class="split-line"></div>
+
+<div class="theme-block footer-line">
+	<div class="theme-title">易趴云餐厅七大优势</div>
+	<div class="labels">
+		<ul class="label">
+			<li>
+				 <img src="/images/label1.png">
+				 <p>就餐免服务员</p>
+			</li>
+			<li>
+				 <img src="/images/label2.png">
+				 <p>深度数据挖掘</p>
+			</li>
+			<li>
+			 	<img src="/images/label3.png">
+				 <p>产品模块化</p>
+			</li>
+			<li>
+			 	<img src="/images/label4.png">
+				 <p>兼容单店连锁</p>
+			</li>
+		</ul>
+
+		<ul class="label">
+			<li>
+				 <img src="/images/label5.png">
+				 <p>粉丝经济打造</p>
+			</li>
+			<li>
+				 <img src="/images/label6.png">
+				 <p>云计算服务</p>
+			</li>
+			<li>
+			 	<img src="/images/label7.png">
+				 <p>专业销售方案</p>
+			</li>
+			<li>
+			 	<img src="/images/label8.png">
+				 <p>智能用户感知</p>
+			</li>
+		</ul>
+	</div>
+</div>

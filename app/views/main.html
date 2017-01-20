@@ -1,0 +1,188 @@
+<style type="text/css">
+    .nav {
+      width:100%;
+      height:80px;
+      line-height: 80px;
+      background: white;
+    }
+
+    .nav-item{
+      margin:0 auto;
+      width:1200px;
+      height:100%;
+    }
+
+    .nav-logo{
+      float:left;
+      height:100%;
+      width: 15%;
+    }
+
+    .nav-logo img{
+      width:102px;
+      height:46px;
+      vertical-align: middle;
+    }
+
+    .nav-theme{
+      float:left;
+      text-align: center;
+      width:70%;
+    }
+
+    .nav-theme li{
+      display: inline-block;
+      width:200px;
+      height:100%;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .nav-theme li a:hover{
+        color:#11BBB4;
+    }
+
+    .nav-theme li a{
+      display: block;
+      color:#999;
+      font-size: 16px;
+    }
+
+    .nav-theme li a.active{
+      color:#11BBB4;
+    }
+
+    .login{
+      float:left;
+      width:15%;
+      height:100%;
+      text-align: center;
+    }
+
+    .user-icon{
+      width:18px;
+      height:18px;
+      vertical-align: middle;
+    }
+
+    .login-block{
+      transform: translateY(58%);
+      float:right;
+      display: block;
+      width:100px;
+      height:36px;
+      line-height: 36px;
+      color:#666;
+    }
+
+    .login-block:hover{
+      color:#0A6E6A;
+    }
+    .footer{
+      margin:0 auto;
+      width:1200px;
+      height:290px;
+      background: white;
+    }
+
+    .site-info{
+      padding-top:45px;
+
+    }
+
+    .footer-logo{
+      width:142px;
+      height:63px;
+      display: block;
+    }
+
+    .split-sign{
+      margin-top:50px;
+      margin-bottom: 5px;
+      width:16px;
+      height:4px;
+      background: #49515C;
+    }
+
+    .copyright{
+      font-size: 14px;
+      color:#49515C;
+    }
+
+    .copyright p{
+      line-height: 28px;
+    }
+
+    .weixin-qrcode{
+      float:right;
+      padding-right:10px;
+      padding-top:30px;
+      text-align: center;
+    }
+
+    .weixin-qrcode img{
+      width:123px;
+      height:123px;
+    }
+
+    .weixin-qrcode p{
+      color:#6D747D;
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+</style>
+
+<div class="container">
+
+  <div class="nav">
+      <div class="nav-item">
+        <div class="nav-logo">
+          <a href="#/index">
+            <img src="/images/nav_logo2.png">
+          </a>
+        </div>
+
+         <ul class="nav-theme">
+          <li ng-click="currentPage=0">
+            <a href="#/main/index" ng-class="{'active': currentPage === 0, '': currentPage !== 0}">首页</a>
+          </li>
+          <li ng-click="currentPage=1">
+            <a href="#/main/seller" ng-class="{'active': currentPage === 1, '': currentPage !== 1}">合作案例</a>
+          </li>
+          <li ng-click="currentPage=2">
+            <a href="#/main/about" ng-class="{'active': currentPage === 2, '': currentPage !== 2}">关于我们</a>
+          </li>
+        </ul>
+
+        <div class="login">
+          <a href="http://e.51eparty.com/anne/admin/toLogin.htm" target="_blank" class="login-block">
+            <img src="/images/user_icon2.png" class="user-icon">&nbsp;&nbsp;商户登录
+          </a>
+        </div>
+      </div>
+  </div>
+
+    <div ui-view=""></div>
+
+    <div class="footer">
+      <div class="site-info">
+        <div class="float-left">
+            <img src="/images/footer_logo.png" class="footer-logo">
+            <div class="copyright">
+                <div class="split-sign"></div>
+                <p>客服电话：400-860-5567<span style="margin:0 10px;">|</span>商务合作：sales@51eparty.com</p>
+                <p>上海易趴科技有限公司 © Copyright 2016-2017 &nbsp;沪ICP备 15057896号-2</p>
+            </div>
+          </div>
+
+        <!-- 微信二维码 -->
+        <div class="weixin-qrcode">
+          <img src="/images/weixin_qrcode.png">
+          <p>商户咨询</p>
+        </div>
+
+      </div>
+    </div>
+  
+</div>
