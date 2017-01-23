@@ -191,6 +191,6 @@ gulp.task('copy:plugins', function () {
   .pipe(gulp.dest(yeoman.dist + '/plugins'));
 });
 
-gulp.task('build', ['clean:dist','revImg'], function () {
-  runSequence(['copy:extras','copy:plugins','client:build']);
+gulp.task('build', ['clean:dist'], function () {
+  runSequence(['revImg','copy:extras','copy:plugins','client:build']);
 });
