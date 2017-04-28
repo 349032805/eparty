@@ -10,13 +10,11 @@ angular
         .state("main", {
             url: "/",
             templateUrl: "/views/main.html",
-            cache:'false',
             controller: 'MainCtrl'
         })
         .state("main.index", {
             url: "main/index",
             templateUrl: "/views/index.html",
-            cache:'false',
             controller: 'IndexCtrl'
         })
         .state("main.seller", {
@@ -26,8 +24,11 @@ angular
         })
         .state("main.about", {
             url: "main/about",
-            cache:'false',
             templateUrl: "/views/about.html"
+        })
+        .state("main.policy", {
+            url: "main/policy",
+            templateUrl: "/views/policy.html"
         });
        
         $urlRouterProvider.otherwise("main/index");
