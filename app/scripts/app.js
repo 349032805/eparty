@@ -17,9 +17,13 @@ angular
             templateUrl: "/views/index.html",
             controller: 'IndexCtrl'
         })
+        .state("main.product", {
+            url: "main/product",
+            templateUrl: "/views/product.html",
+            controller: 'IndexCtrl'
+        })
         .state("main.seller", {
             url: "main/seller",
-            cache:'false',
             templateUrl: "/views/seller.html"
         })
         .state("main.about", {

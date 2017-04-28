@@ -7,12 +7,16 @@ angular.module('eparty')
         $scope.currentPage = 0;
     }
 
-    if(path =="/main/seller"){
+    if(path =="/main/product"){
         $scope.currentPage = 1;
     }
 
-    if(path =="/main/about"){
+    if(path =="/main/seller"){
         $scope.currentPage = 2;
+    }
+
+    if(path =="/main/about"){
+        $scope.currentPage = 3;
     }
       
  });

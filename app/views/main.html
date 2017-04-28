@@ -24,15 +24,20 @@
       vertical-align: middle;
     }
 
-    .nav-theme{
+    .nav-items {
       float:left;
-      text-align: center;
       width:70%;
     }
 
+    .nav-theme{
+      text-align: center;
+      width:80%;
+      display: flex;
+      margin: 0 auto;
+    }
+
     .nav-theme li{
-      display: inline-block;
-      width:200px;
+      flex: 1;
       height:100%;
       text-align: center;
       font-size: 16px;
@@ -150,17 +155,22 @@
           </a>
         </div>
 
-         <ul class="nav-theme">
-          <li ng-click="currentPage=0">
-            <a href="#/main/index" ng-class="{'active': currentPage === 0, '': currentPage !== 0}">首页</a>
-          </li>
-          <li ng-click="currentPage=1">
-            <a href="#/main/seller" ng-class="{'active': currentPage === 1, '': currentPage !== 1}">合作案例</a>
-          </li>
-          <li ng-click="currentPage=2">
-            <a href="#/main/about" ng-class="{'active': currentPage === 2, '': currentPage !== 2}">关于我们</a>
-          </li>
-        </ul>
+        <div class="nav-items">
+           <ul class="nav-theme">
+            <li ng-click="currentPage=0">
+              <a href="#/main/index" ng-class="{'active': currentPage === 0, '': currentPage !== 0}">首页</a>
+            </li>
+             <li ng-click="currentPage=1">
+              <a href="#/main/product" ng-class="{'active': currentPage === 1, '': currentPage !== 1}">产品中心</a>
+            </li>
+            <li ng-click="currentPage=2">
+              <a href="#/main/seller" ng-class="{'active': currentPage === 2, '': currentPage !== 2}">合作商家</a>
+            </li>
+            <li ng-click="currentPage=3">
+              <a href="#/main/about" ng-class="{'active': currentPage === 3, '': currentPage !== 3}">关于我们</a>
+            </li>
+          </ul>
+        </div>
 
         <div class="login">
           <a href="http://e.51eparty.com/anne/admin/toLogin.htm" target="_blank" class="login-block">
