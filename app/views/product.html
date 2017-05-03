@@ -44,7 +44,6 @@
 		position: relative;
 		background: #fff url('/images/line.png') no-repeat;
 		background-size: 100% 100%;
-		border: 1px solid red;
 	}
 
 	.part2-img {
@@ -56,9 +55,8 @@
 	}
 
 	.part2-intro {
-		height: 200px;
 		position: absolute;
-		right: 100px;
+		right: 60px;
 		top: 100px;
 	}
 
@@ -69,7 +67,7 @@
 	}
 
 	.app {
-		width: 220px;
+		width: 234px;
 		height:36px;
 		line-height: 36px;
 		padding:0 10px;
@@ -77,11 +75,66 @@
 		border:1px dashed #11BBB4;
 		border-radius: 20px;
 		margin-top:20px;
+		letter-spacing: 1px;
 	}
 
 	.app-function {
 		margin-top:10px;
-		line-height: 28px;
+		line-height: 34px;
+		letter-spacing: 1px;
+	}
+
+	.qrcode {
+		margin-top: 50px;
+	}
+
+	.qrcode li {
+		float: left;
+		text-align: center;
+		font-size: 14px;
+		color:  #595959;
+		line-height: 20px;
+	}
+
+	.qrcode img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.part3 {
+		width: 100%;
+		height: 619px;
+		background: #F6F6F6;
+	}
+
+	.lamp {
+		position: absolute;
+		top: 0;
+		left: 60px;
+	}
+
+	.lamp li {
+		float: left;
+		margin-right: 140px;
+	}
+
+	.lamp li img {
+		width: 96px;
+		height:  88px;
+	}
+
+	.part3-intro {
+		position: absolute;
+		left: 170px;
+		top: 140px;
+	}
+
+	.part3-img {
+		width: 486px;
+		height: 562px;
+		position: absolute;
+		bottom: 0;
+		right: 60px;
 	}
 
 </style>
@@ -108,8 +161,41 @@
 					<p>[打赏管理] 查看顾客的打赏情况、提现余额</p>
 					<p>......</p>
 				</div>
+
+				<ul class="qrcode">
+					<li><img src="/images/weixin_qrcode.png"><p>易趴云小二(正餐版)</p></li>
+					<li style="margin-left:60px;"><img src="/images/weixin_qrcode.png"><p>易趴云小二(快餐版)</p></li>
+				</ul>
+
 			</div>
 		</div>
+	</div>
+
+	<div class="part3">
+		 <div class="part1-content">
+		 	<ul class="lamp">
+		 		<li><img src="/images/lamp.png"></li>
+		 		<li><img src="/images/lamp.png"></li>
+		 		<li><img src="/images/lamp.png"></li>
+		 	</ul>
+
+		 	<div class="part3-intro">
+		 		<div class="bold-title">易趴云掌柜</div>
+				<div class="app">查看营业情况的手机APP</div>
+				<div class="app-function">
+					<p>[营业报表] 查看餐厅的营业情况</p>
+					<p>[订单管理] 管理新老顾客的订单</p>
+					<p>[数据分析] 各指标数据进行分析</p>
+					<p>......</p>
+				</div>
+
+				<ul class="qrcode">
+					<li><img src="/images/weixin_qrcode.png"><p>易趴云掌柜</p></li>
+				</ul>
+		 	</div>
+
+		 	<img src="/images/part3.png" class="part3-img">
+		 </div>
 	</div>
 
 
