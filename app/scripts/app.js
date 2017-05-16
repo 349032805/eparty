@@ -33,6 +33,11 @@ angular
         .state("main.policy", {
             url: "main/policy",
             templateUrl: "/views/policy.html"
+        })
+        .state("download", {
+            url: "/download",
+            templateUrl: "/views/download.html",
+            controller: 'DownloadCtrl'
         });
        
         $urlRouterProvider.otherwise("main/index");

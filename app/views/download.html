@@ -1,0 +1,92 @@
+<style type="text/css">
+	.main {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.banner {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	.opt {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		z-index: 100;
+		width: 100%;
+	}
+
+	.shape {
+		width: 100%;
+		height: 400px;
+	}
+
+	.btn {
+		width: 80%;
+		height: auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 200;
+	}
+
+	.company {
+		font-size: 22px;
+		color: #b0b0b0;
+		position: absolute;
+		bottom: 20px;
+		margin: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	.back-layer {
+		background: #000;
+		opacity: 0.3;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+	}
+
+	.tip {
+		position: fixed;
+		right: 60px;
+		top: 20px;
+		z-index: 3000;
+	}
+</style>
+
+
+	<div class="main">
+
+		<img src="/images/boss.jpg" class="banner" ng-if="appParam=='boss'">
+		<img src="/images/fastfood.jpg" class="banner" ng-if="appParam=='fastfood'">
+		<img src="/images/dinner.jpg" class="banner" ng-if="appParam=='dinner'">
+
+		<div class="opt">
+			<img src="/images/shape.png" class="shape">
+			<!-- 底部按钮 -->
+			<!-- <img src="/images/ios.png" class="btn" style="bottom:280px;" ng-click="downloadIOS()"> -->
+			<img src="/images/download.jpg" class="btn" style="bottom:110px;" ng-click="downloadAndroid()">
+
+			<p class="company">百味云科技股份有限公司</p>
+		</div>
+		
+	</div>
+
+	<!-- 提示 -->
+	<img src="/images/tip.png" class="tip" ng-if="way=='weixin'">
+
+	<!-- 背景图层 -->
+	<div class="back-layer" ng-if="way=='weixin'"></div>
